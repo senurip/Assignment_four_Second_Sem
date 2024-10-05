@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case2</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <style>
+        body{
+            background-color: darkblue;
+        }
+        section{
+            background-color: darkblue;
+
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        div{
+
+            width: 100px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: gray;
+
+            /*onama deyak hari madata genna me tika danna*/
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+
+
+
+        }
+        /*meka arayge border ek widiyata penna hadnawa*/
+        div:before{
+            content: "";
+            border: 10px solid white;
+            border-radius: 100px;
+            border-top-color: darkred;
+
+
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+
+
+        }
+
+        div:hover::before{
+            cursor: pointer;
+            transform:rotate(360deg);
+            /*cursor eka ayin karama animation eka natra wenna/  hover weddi witrak meka apply wenna*/
+            transition-duration:2s;
+
+        }
+        div>h1{
+
+            width: max-content;
+            height: max-content;
+
+            color: white;
+
+
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <H1>RWAD</H1>
+    </div>
+
+</section>
+</body>
+</html>

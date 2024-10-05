@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case3BasicAnimation</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+
+        body{
+            overflow:hidden;
+        }
+
+        div{
+            width: 150px;
+            height: 80px;
+            background-color: blue;
+            border-radius:10%;
+
+
+            animation: my-animation 3s infinite alternate;
+        }
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+                background-color: blue;
+
+            }
+            25%{
+                margin-left: calc(100vw - 150px);
+                margin-top: 0;
+                background-color: darkred;
+                transform:rotate(180deg);
+            }
+            50%{
+                margin-left: calc(100vw - 150px);
+                margin-top: calc(100vh - 80px);
+                background-color: yellow;
+                transform:rotate(0deg);
+
+            }
+            75%{
+                margin-left: 0;
+                margin-top:calc(100vh - 80px);
+                background-color: green;
+                transform:rotate(-180deg);
+            }
+            /*100% {}*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
